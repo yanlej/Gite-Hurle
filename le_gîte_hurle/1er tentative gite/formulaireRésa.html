@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de réservation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="formulaireResa.css">
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <main>
+
+        <form method="post" action="">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-12" style="height: 150px;">
+                        <div class="col-12" style="height: 80px;">
+                            <div class="col-6 offset-3" style="height: 80px;">
+                                <h1 class="offset-1">FORMULAIRE DE RESERVATION</h1>
+                            </div>
+                        </div>
+                        <div class="col-12" style="height: 23px;"></div>
+                        <div class="col-12" style="height: 23px;"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12" style="height: 60px;">
+                        <div class="col-6 offset-4">
+                                <!--Selection des types de chambres-->
+                            <label for="chambre">Quel type d'espace voulez-vous ?</label>
+                                <select name="chambre" id="chambre">
+                                    <option value="choix">Aucun Choix</option>
+                                    <option value="chambre2personne">Chambre pour 2 personnes</option>
+                                    <option value="chambrefamiliale">Chambre Familiale</option>
+                                    <option value="appartement">Appartement</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-12" style="height: 60px;">
+                        <div class="col-6 offset-4">
+                                <!--Selection de la formule si choisit-->
+                            <label for="formule">Souhaitez-vous prendre une formule ?</label>
+                                <select name="formule" id="formule">
+                                    <option value="choix">Aucun Choix</option>
+                                    <option value="Weekend">Weekend d'amour</option>
+                                    <option value="nature">Nature et découverte</option>
+                                    <option value="saisonnier">Saisonnier</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-12" style="height: 60px;">
+                        <div class="col-6 offset-4">
+                                <!--Selection DATE DE DEBUT-->
+                            <label for="debut">Indiquez votre date de début du séjour</label>
+                                <input type="date" name="debut" id="debut" required>
+                        </div>
+                    </div>
+                    <div class="col-12" style="height: 60px;">
+                        <div class="col-6 offset-4">
+                            <!--Selection DATE DE FIN-->
+                            <label for="fin">Indiquez votre date de fin de séjour</label>
+                                <input type="date" name="fin" id="fin" required>
+                        </div>
+                    </div>
+                    <div class="col-12" style="height: 60px;">
+                        <div class="col-6 offset-4">
+                                <!--E-mail du client-->
+                            <label for="emel">* Votre adresse E-mail :</label>
+                                <input type="email" name="emel" id="emel" placeholder="E-mail ici" required>
+                        </div>
+                    </div>
+                    <div class="col-12" style="height: 200px;">
+                        <div class="col-6 offset-4">
+                            <p>Si vous avez des informations complémentaires à nous transmettre, veuillez nous les indiquées ici :</p>
+                            <textarea name="complementaire" id="complementaire" cols="50" rows="4" placeholder="Vos informations complémentaires ici"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-12" style="height: 100px;">
+                        <p><small>* champs obligatoire</small></p>
+                            <div class="col-1 offset-6" style="height: 30px;">
+                                <!--Boutton de confirmation-->
+                                <input type="submit" value="Confirmer">
+                            </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
